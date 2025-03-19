@@ -16,6 +16,9 @@ const config = {
         thunderforest: 'missing_api_key',
         kurviger: 'missing_api_key',
     },
+    devServer: {
+        allowedHosts: "all"
+      },
     // if true there will be an option to enable the GraphHopper routing graph and the urban density visualization in the layers menu
     routingGraphLayerAllowed: false,
     // parameters used for the routing request generation
