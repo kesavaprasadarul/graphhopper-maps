@@ -91,6 +91,8 @@
 "small_truck":"Small Truck",
 "bus":"Bus",
 "truck":"Truck",
+"truck_co2": "Truck with CO2 profiling",
+"truck_elevation": "Truck with elevation profiling",
 "staticlink":"static link",
 "motorcycle":"Motorcycle",
 "scooter":"Scooter",

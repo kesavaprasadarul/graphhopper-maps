@@ -10,12 +10,14 @@ import SmallTruckIcon from './small_truck.svg'
 import TruckIcon from './truck.svg'
 import WheelchairIcon from './wheelchair.svg'
 import QuestionMarkIcon from './question_mark.svg'
+import TruckCo2Icon from './truck_co2.svg'
+import TruckElevationIcon from './truck_ele.svg'
 
 // ALL AVAILABLE ICONS
 // every svg gets mapped to a key, so icons can be easily added
 export const icons: Record<string, any> = {
     car: CarIcon,
-    small_truck: SmallTruckIcon,
+    small_truck: TruckIcon,
     truck: TruckIcon,
     scooter: ScooterIcon,
     foot: FootIcon,
@@ -26,4 +28,6 @@ export const icons: Record<string, any> = {
     motorcycle: MotorcycleIcon,
     wheelchair: WheelchairIcon,
     question_mark: QuestionMarkIcon,
+    truck_co2: TruckCo2Icon,
+    truck_elevation: TruckElevationIcon,
 }
