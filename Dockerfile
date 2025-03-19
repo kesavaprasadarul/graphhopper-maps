@@ -18,4 +18,4 @@ COPY . .
 EXPOSE 3000
 
 # Run the application
-CMD ["npm", "run", "serve", "--disable-host-check"]
+CMD ["npm", "run", "serve"]
