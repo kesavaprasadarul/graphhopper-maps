@@ -1,0 +1,23 @@
+version: 38
+jobs:
+- name: Graphhopper UI - Docker Build
+  steps:
+  - !CheckoutStep
+    name: Checkout
+    cloneCredential: !DefaultCredential {}
+    withLfs: true
+    withSubmodules: true
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  - !BuildImageStep
+    name: Docker Build
+    output: !RegistryOutput
+      tags: git.de.kesava89.studio/kesavaprasadarul/graphhopper-maps/graphhopper-ui:@build_version@
+    registryLogins:
+    - registryUrl: '@server_url@'
+      userName: '@job_token@'
+      passwordSecret: access-token
+    condition: ALL_PREVIOUS_STEPS_WERE_SUCCESSFUL
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 14400
